@@ -1,0 +1,10 @@
+Log file created at Mon Jan 13 19:56:36 2025
+
+arquivo.txt moved to txt at Mon Jan 13 19:56:36 2025
+arquivo2.txt moved to txt at Mon Jan 13 19:56:36 2025
+arquivo.pdf moved to pdf at Mon Jan 13 19:56:36 2025
+
+
+arquivo2.pdf moved to pdf at Mon Jan 13 20:00:19 2025
+
+
