@@ -10,18 +10,34 @@ print(list)
 
 # Check if log file exists
 
-if not os.path.exists('log/log.txt'):
-
-    # Create log file
+if not os.path.exists('log'):
     os.makedirs('log')
 
-    log = open('log/log.txt', 'w')
+
+date = time.ctime().split(' ')
+
+date = date[2] + date[1] + date[4]
+
+log_path = 'log/log' + date + '.txt'
+
+if not os.path.exists(log_path):
+
+    log = open(log_path, 'w')
     log.write('Log file created at ' + time.ctime() + '\n\n\n' )
     log.close()
 
 
 
-log = open('log/log.txt', 'a')
+log = open(log_path, 'a')
+
+# Counting userful files
+number = 0
+for files in list:
+    if '.' in files and files != 'Organizer.py':
+        number += 1
+
+log.write('Organizing ' + str(number) + ' files at ' + time.ctime() + '\n')
+
 for file in list:
 
     if file == 'Organizer.py':
@@ -40,3 +56,4 @@ for file in list:
 log.write('\n\n')
 
 log.close()
+
